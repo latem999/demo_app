@@ -10,5 +10,15 @@
   <%= @user.email %>
 </p>
 
+<p><strong>Microposts:</strong></p>
+<% @user.microposts.each do |micropost| %>
+  <p>
+  	<%= micropost.content %><br />Created at
+  	<%= micropost.created_at.strftime("%d %b. %Y %H:%M") %> |
+  	<%= link_to 'Show', micropost %>
+  </p>
+<% end %>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<%= link_to 'All users', users_path %> |
+<%= link_to 'All microposts', microposts_path %>
