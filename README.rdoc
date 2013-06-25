@@ -10,5 +10,5 @@ This is the demo app for the Ruby on Rails Tutorial (for {Rails 4.0}[http://ruby
 
 * a few links between views
 
-The app should be running on heroku:
+The app should be running on Heroku:
 link:http://l999.herokuapp.com/
